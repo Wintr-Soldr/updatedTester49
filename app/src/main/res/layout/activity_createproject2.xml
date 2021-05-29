@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createproject">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Tester49.AppBarOverlay"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="89dp"
+        android:layout_y="16dp"
+
+        android:text="Add New Project"
+
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="35dp"
+        android:layout_y="92dp"
+        android:text="Project Name"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/projectnameinput"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="146dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Project Name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="15dp"
+        android:layout_y="223dp"
+        android:text="Department Name"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/departmentspinner"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_x="137dp"
+        android:layout_y="276dp"
+        android:backgroundTint="#FFEB3B"
+        android:background="@color/black"
+        />
+
+    <Button
+        android:id="@+id/PJSAVEBUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="156dp"
+        android:layout_y="642dp"
+        android:backgroundTint="#00BCD4"
+
+        android:text="SAVE"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <DatePicker
+        android:id="@+id/PJstartupdate"
+        android:layout_width="264dp"
+        android:layout_height="114dp"
+        android:layout_x="136dp"
+        android:layout_y="357dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="397dp"
+        android:text="Start Date"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="537dp"
+        android:text="Est Date"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <DatePicker
+        android:id="@+id/PJextensiondate"
+
+        android:layout_width="264dp"
+        android:layout_height="114dp"
+        android:layout_x="136dp"
+        android:layout_y="497dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+</AbsoluteLayout>

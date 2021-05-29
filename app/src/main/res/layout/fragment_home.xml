@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/projectbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="202dp"
+        android:layout_y="128dp"
+        android:text="Projects"
+
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/createbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:layout_x="98dp"
+        android:layout_y="32dp"
+        android:text="Add a new task"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="37dp"
+        android:layout_y="128dp"
+        android:background="@color/purple_200"
+        android:text="Analytics"
+
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/total_task_created_view"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_x="94dp"
+        android:layout_y="235dp"
+        android:background="@drawable/textview_border"
+        android:hint="Total Tasks Created"
+        android:textSize="16dp"
+        android:textStyle="bold"
+
+
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_x="95dp"
+        android:layout_y="260dp"
+        android:background="@drawable/textview_border"
+        android:text="Ongoing Task"
+        android:textAlignment="center"
+        android:id="@+id/ongoing_task_view"
+        android:textSize="13dp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/under_review_view"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_x="195dp"
+        android:layout_y="260dp"
+        android:background="@drawable/textview_border"
+        android:text="Under Review"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_border"
+        android:layout_x="95dp"
+        android:layout_y="310dp"
+        android:text="Completed Task"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/completed_task_view"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="UpComing Task"
+        android:textSize="13dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="@drawable/textview_border"
+        android:layout_y="310dp"
+        android:layout_x="195dp"
+        android:id="@+id/upcoming_task_view"
+        />
+    <TextView
+        android:id="@+id/tasks_delayed_view"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_border"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Tasks Delayed"
+        android:layout_x="95dp"
+        android:layout_y="360dp"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/students_without_tasks_view"
+        android:text="Students Without Task"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:background="@drawable/textview_border"
+        android:layout_x="195dp"
+        android:layout_y="360dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="36dp"
+        android:layout_y="445dp"
+        android:text="Updates"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        />
+
+    <HorizontalScrollView
+        android:layout_width="352dp"
+        android:layout_height="125dp"
+        android:layout_x="30dp"
+        android:layout_y="487dp"
+        android:background="@drawable/textview_border"
+        android:scrollbars="horizontal"
+        android:scrollbarSize="10dp"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="352dp"
+            android:layout_height="125dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:text="Text to be displayed here"
+                android:id="@+id/card1"
+
+
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:text="card2 Text to be dispalyed"
+                android:id="@+id/card2"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:text="Card3 text to be dispalyed"
+                android:id="@+id/card3"
+                />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</AbsoluteLayout>

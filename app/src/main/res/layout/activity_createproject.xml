@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".createtask">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="108dp"
+        android:layout_y="4dp"
+        android:text="Create a new Task"
+
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_x="7dp"
+        android:layout_y="158dp"
+        android:text="Department Name"
+
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="15dp"
+        android:layout_y="37dp"
+        android:text="Task Name"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <Spinner
+        android:id="@+id/deptselectspinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="206dp"
+        android:layout_y="163dp" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tasknamefield"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_x="35dp"
+        android:layout_y="89dp"
+
+        android:hint="Task name"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="13dp"
+
+        android:layout_y="223dp"
+        android:text="Select Assignees"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/multiselector"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_x="24dp"
+
+        android:layout_y="259dp"
+        android:background="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/multiselectorresult"
+        android:layout_width="351dp"
+
+        android:layout_height="wrap_content"
+        android:layout_x="27dp"
+        android:layout_y="318dp"
+        android:background="@drawable/textview_border"
+        android:hint="selected ppl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_x="23dp"
+        android:layout_y="412dp"
+        android:text="Starting Date"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_x="24dp"
+        android:layout_y="577dp"
+        android:text="Est Date"
+        android:textStyle="bold" />
+
+
+    <DatePicker
+        android:id="@+id/startdatepicker"
+        android:layout_width="227dp"
+        android:layout_height="148dp"
+        android:layout_x="125dp"
+        android:layout_y="350dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <DatePicker
+        android:id="@+id/extdatepicker"
+        android:layout_width="227dp"
+        android:layout_height="148dp"
+        android:layout_x="125dp"
+        android:layout_y="514dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="138dp"
+        android:layout_y="674dp"
+        android:text="SAVE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</AbsoluteLayout>

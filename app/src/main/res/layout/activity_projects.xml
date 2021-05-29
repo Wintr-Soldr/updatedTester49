@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Projects">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="96dp"
+        android:layout_y="25dp"
+        android:backgroundTint="#F85B5B"
+        android:text="Add New Project"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="97dp"
+        android:text="Project List"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="189dp"
+        android:layout_y="91dp"
+        android:text="filter by"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/filterbyspinner"
+        android:layout_width="121dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#FFC107"
+        android:background="@color/black"
+        android:layout_x="272dp"
+        android:layout_y="90dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="521dp"
+        android:layout_x="0dp"
+        android:backgroundTint="#82F486"
+        android:background="@color/black"
+        android:scrollbars="vertical"
+        android:layout_y="151dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This a project view and can eb edited "
+                android:id="@+id/samplerexrview"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/textview_border"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</AbsoluteLayout>
