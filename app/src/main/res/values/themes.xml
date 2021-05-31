@@ -12,6 +12,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="button123" parent="android:style/Widget.Button">
+        <item name="android:backgroundTint">@color/white</item>
+
+
+
     </style>
 
     <style name="Theme.Tester49.NoActionBar">

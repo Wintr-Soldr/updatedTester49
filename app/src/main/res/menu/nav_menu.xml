@@ -3,16 +3,29 @@
     <item
         android:id="@+id/ic_home"
         android:title="home"
-        android:icon="@drawable/homeicon"
+        android:icon="@drawable/ic_homeiconnew"
         />
     <item
-        android:id="@+id/ic_dept"
-        android:icon="@drawable/dept"
-        android:title="dept"
+        android:id="@+id/ic_followups"
+        android:icon="@drawable/ic_followupsiconnew"
+        android:title="Follow Ups"
         />
+    <item
+        android:id="@+id/ic_notifications"
+        android:icon="@drawable/ic_notificationsiconnew"
+        android:title="Notifications"
+        />
+
     <item
         android:id="@+id/ic_admin"
-        android:icon="@drawable/admin"
-        android:title="admin"/>
+        android:icon="@drawable/ic_teamiconnew"
+        android:title="Team"/>
+    <item
+        android:id="@+id/ic_dept"
+        android:icon="@drawable/ic_projectsiconnew"
+        android:title="Projects"
+        />
+
+
 
 </menu>

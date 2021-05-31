@@ -9,25 +9,21 @@
 
 
     <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:id="@+id/projectbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="202dp"
-        android:layout_y="128dp"
-        android:text="Projects"
 
-        android:textColor="@color/black"
-        android:textStyle="bold" />
 
     <Button
         android:id="@+id/createbutton"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="60dp"
-
-        android:layout_x="98dp"
-        android:layout_y="32dp"
-        android:text="Add a new task"
+        android:layout_x="17dp"
+        android:layout_y="11dp"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:drawableLeft="@drawable/ic_plusvector"
+        android:text="Add a New Task"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#808080"
         android:textSize="20dp"
         android:textStyle="bold"
 
@@ -37,38 +33,47 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="37dp"
-        android:layout_y="128dp"
-        android:background="@color/purple_200"
+        android:layout_x="9dp"
+        android:layout_y="81dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_downarrow"
         android:text="Analytics"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+
 
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="87dp" />
 
+
     <TextView
         android:id="@+id/total_task_created_view"
-        android:layout_width="200dp"
-        android:layout_height="25dp"
-        android:layout_x="94dp"
-        android:layout_y="235dp"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_x="49dp"
+        android:layout_y="184dp"
         android:background="@drawable/textview_border"
-        android:hint="Total Tasks Created"
+        android:gravity="center"
+        android:hint="Total Tasks Created xx"
         android:textSize="16dp"
         android:textStyle="bold"
-
-
+        android:textAlignment="center"
         tools:layout_editor_absoluteX="134dp"
         tools:layout_editor_absoluteY="184dp" />
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_x="95dp"
-        android:layout_y="260dp"
-        android:background="@drawable/textview_border"
-        android:text="Ongoing Task"
-        android:textAlignment="center"
         android:id="@+id/ongoing_task_view"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_x="51dp"
+
+        android:layout_y="244dp"
+        android:background="@drawable/ic_ongoingtaskbackground"
+
+        android:gravity="center"
+        android:text="Ongoing Task\n xx"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="13dp"
         android:textStyle="bold"
 
@@ -77,83 +82,115 @@
 
     <TextView
         android:id="@+id/under_review_view"
-        android:layout_width="100dp"
+        android:layout_width="136dp"
         android:layout_height="50dp"
-        android:layout_x="195dp"
-        android:layout_y="260dp"
-        android:background="@drawable/textview_border"
-        android:text="Under Review"
+        android:textColor="@color/white"
+        android:layout_x="216dp"
+        android:layout_y="244dp"
+
+        android:background="@drawable/ic_underreviewbackground"
+        android:gravity="center"
+
+        android:text="Under Review\nxx"
         android:textAlignment="center"
         android:textSize="13dp"
         android:textStyle="bold" />
+
     <TextView
-        android:layout_width="100dp"
+        android:layout_width="136dp"
         android:layout_height="50dp"
-        android:background="@drawable/textview_border"
-        android:layout_x="95dp"
-        android:layout_y="310dp"
-        android:text="Completed Task"
+        android:background="@drawable/ic_completetaskbackground"
+        android:textColor="@color/white"
+
+        android:layout_x="51dp"
+
+        android:gravity="center"
+
+        android:layout_y="300dp"
+        android:text="Completed Task\nxx"
         android:textSize="13dp"
         android:textStyle="bold"
         android:textAlignment="center"
         android:id="@+id/completed_task_view"
         />
     <TextView
-        android:layout_width="100dp"
+        android:layout_width="136dp"
         android:layout_height="50dp"
-        android:text="UpComing Task"
+        android:text="UpComing Task\nxx"
+        android:gravity="center"
+        android:textColor="@color/white"
+
         android:textSize="13dp"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:background="@drawable/textview_border"
-        android:layout_y="310dp"
-        android:layout_x="195dp"
+        android:background="@drawable/ic_upcomingprojects"
+
+        android:layout_y="300dp"
+        android:layout_x="216dp"
         android:id="@+id/upcoming_task_view"
         />
     <TextView
         android:id="@+id/tasks_delayed_view"
-        android:layout_width="100dp"
+        android:layout_width="136dp"
+        android:gravity="center"
+
         android:layout_height="50dp"
-        android:background="@drawable/textview_border"
+        android:background="@drawable/ic_taskdelayedbackground"
         android:textSize="13dp"
+
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:text="Tasks Delayed"
-        android:layout_x="95dp"
+        android:text="Tasks Delayed\nxx"
+        android:layout_x="51dp"
         android:layout_y="360dp"/>
     <TextView
-        android:layout_width="100dp"
+        android:layout_width="136dp"
         android:layout_height="50dp"
         android:id="@+id/students_without_tasks_view"
-        android:text="Students Without Task"
+        android:text="Students Without Task\nxx"
+
+    android:gravity="center"
+            android:textColor="@color/white"
+
         android:textAlignment="center"
         android:textStyle="bold"
-        android:textSize="13dp"
-        android:background="@drawable/textview_border"
-        android:layout_x="195dp"
+        android:textSize="12dp"
+        android:background="@drawable/ic_studentswithouttasks"
+
+        android:layout_x="216dp"
         android:layout_y="360dp"
         />
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="36dp"
+        android:textColor="#808080"
+
         android:layout_y="445dp"
-        android:text="Updates"
-        android:textStyle="bold"
+        android:text="Latest Updates"
+
         android:textSize="20dp"
 
         />
 
+
+
+
     <HorizontalScrollView
         android:layout_width="352dp"
-        android:layout_height="125dp"
+        android:layout_height="135dp"
         android:layout_x="30dp"
+
         android:layout_y="487dp"
+
         android:background="@drawable/textview_border"
-        android:scrollbars="horizontal"
-        android:scrollbarSize="10dp"
+        android:fadeScrollbars="true"
+
+
 
 
         >
@@ -161,33 +198,64 @@
         <LinearLayout
             android:layout_width="352dp"
             android:layout_height="125dp"
+            android:layout_margin="10dp"
+            android:layout_marginHorizontal="5dp"
+
+
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="180dp"
                 android:layout_height="110dp"
-                android:text="Text to be displayed here"
+                android:textAlignment="textStart"
+                android:text="Abhishek            id:M1011\n\nUpdated Task 1\n\nAssigned Task to Rohan\nTeam : Social Media"
                 android:id="@+id/card1"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingVertical="8dp"
+android:textSize="12dp"
+
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textview_border"
 
 
                 />
             <TextView
                 android:layout_width="150dp"
+                android:textAlignment="textStart"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingVertical="8dp"
                 android:layout_height="110dp"
-                android:text="card2 Text to be dispalyed"
+                android:text="Rekha        id: M1010\n\nScheduled Meeting with CMD Team\nAssigned Task to Sweta\nTeam : UI UX Website"
                 android:id="@+id/card2"
+                android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                android:background="@drawable/textview_border"
                 />
             <TextView
                 android:layout_width="150dp"
+                android:textAlignment="textStart"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingVertical="8dp"
+                android:textSize="12dp"
                 android:layout_height="110dp"
-                android:text="Card3 text to be dispalyed"
+                android:text="This is Card 3 \n Text to be displayed here"
                 android:id="@+id/card3"
+                android:background="@drawable/textview_border"
+                android:layout_marginRight="10dp"
                 />
 
 
         </LinearLayout>
 
     </HorizontalScrollView>
+
+
 
 
 </AbsoluteLayout>
