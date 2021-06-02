@@ -47,11 +47,16 @@
     </string-array>
 
     <string-array name="listarray">
-        <item>Diya Mourya</item>
+        <item>Select All</item>
+        <item>Saurav</item>
         <item>Priyal Kumawat</item>
-        <item>Ankita Dey</item>
-        <item>Rohan Garg</item>
+        <item>Ahana Dey</item>
+        <item>Piyush</item>
+        <item>Jeegyasha</item>
+        <item>Diya Mourya</item>
     </string-array>
+
+    
 
     <string name="starting_da">Starting Date</string>
     <string name="est_date">Est Deadline</string>
