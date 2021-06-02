@@ -34,7 +34,7 @@
                 android:id="@+id/taskName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/task_name"
@@ -47,8 +47,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
                 app:layout_constraintBottom_toTopOf="@id/projName"
                 app:layout_constraintTop_toBottomOf="@id/taskName">
 
@@ -61,7 +61,7 @@
                 android:id="@+id/projName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="12dp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/proj_name"
@@ -76,8 +76,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginTop="0dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
                 app:layout_constraintTop_toBottomOf="@id/projName"
                 app:layout_constraintBottom_toTopOf="@id/deptName">
 
@@ -95,7 +95,7 @@
                 android:id="@+id/deptName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="12dp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/dept"
@@ -110,8 +110,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginTop="0dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
                 app:layout_constraintTop_toBottomOf="@id/deptName"
                 app:layout_constraintBottom_toTopOf="">
 
@@ -124,49 +124,60 @@
                     tools:ignore="LabelFor" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <TextView
+                android:id="@+id/assignTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/assign_to"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/menu2"
+                app:layout_constraintBottom_toTopOf="@id/grid_box"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
             <RelativeLayout
                 android:id ="@+id/rel1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/menu2">
+                android:layout_marginStart="100dp"
+                app:layout_constraintTop_toBottomOf="@id/menu2"
+                app:layout_constraintStart_toEndOf="@id/assignTo">
 
-                <TextView
-                    android:id="@+id/assignTo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="40dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="@string/assign_to"
-                    android:textSize="12sp"
-                    />
-
-                <LinearLayout
-                    android:id="@+id/linearLayout6"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/menu3"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    android:layout_centerInParent="true"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginTop="70dp"
-                    android:layout_toRightOf="@id/assignTo">
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp">
 
-                    <Spinner
-                        android:id="@+id/spinner1"
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextView3"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:theme="@style/ThemeOverlay.AppCompat.Light"
-                        android:background="@android:drawable/btn_dropdown"/>
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
 
-                </LinearLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/list"
+                    android:textSize="12sp"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/rel2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 app:layout_constraintTop_toBottomOf="@id/grid_box">
 
@@ -175,7 +186,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
                     android:text="@string/starting_da"
                     android:textColor="#595959"
@@ -183,9 +194,10 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id ="@+id/datebox1"
-                    android:layout_width="180dp"
+                    android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginStart="70dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/rectangle_3"
                     android:layout_toRightOf="@id/starting_da">
@@ -229,7 +241,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
                     android:text="@string/est_date"
                     android:textColor="#595959"
@@ -237,10 +249,11 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id ="@+id/datebox2"
-                    android:layout_width="180dp"
+                    android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginStart="73dp"
                     android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
                     android:background="@drawable/rectangle_3"
                     android:layout_toRightOf="@id/est_da">
 
@@ -299,10 +312,10 @@
             <LinearLayout
                 android:id="@+id/grid_box"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
                 android:background="@drawable/rectangle_3"
                 app:layout_constraintTop_toBottomOf="@id/rel1">
             <GridView
@@ -310,7 +323,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginEnd="10dp"
                 android:gravity="center"
                 android:horizontalSpacing="2dp"
@@ -325,9 +338,8 @@
                 android:id="@+id/varvisibletext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="126dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="126dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="center_vertical"
                 android:text="No item is selected!"
