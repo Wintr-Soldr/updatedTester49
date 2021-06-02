@@ -31,7 +31,6 @@ class Dropdown : AppCompatActivity() {
         val adapter2 = ArrayAdapter(this, R.layout.dropdown_item1, developers)
         binding.autoCompleteTextView2.setAdapter(adapter2)
 
-        val spinner = findViewById<Spinner>(R.id.spinner1)
         val selectPeople = applicationContext.resources.getStringArray(R.array.listarray)
         val categoryModelArrayList = ArrayList<CategoryModel>()
         for (s in selectPeople) {
@@ -41,7 +40,7 @@ class Dropdown : AppCompatActivity() {
             categoryModelArrayList.add(categoryModel)
         }
         val myAdapter = MyAdapter(this@Dropdown, 0, categoryModelArrayList)
-        spinner.adapter = myAdapter
+        binding.autoCompleteTextView3.setAdapter(myAdapter)
         val sharedPreferences = this.getPreferences(MODE_PRIVATE)
         val category = sharedPreferences.all as Map<String, *>
         Toast.makeText(applicationContext, "" + category, Toast.LENGTH_LONG).show()
