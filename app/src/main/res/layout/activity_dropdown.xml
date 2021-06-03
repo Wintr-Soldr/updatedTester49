@@ -209,9 +209,11 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="10dp"
+                    android:inputType="text"
                     app:layout_constraintTop_toTopOf="@id/datebox1"
                     app:layout_constraintBottom_toBottomOf="@id/datebox1"
-                    app:layout_constraintEnd_toStartOf="@id/cal1"/>
+                    app:layout_constraintEnd_toStartOf="@id/cal1"
+                    tools:ignore="TextFields" />
 
                     <ImageButton
                         android:id="@+id/cal1"
