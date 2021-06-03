@@ -5,7 +5,7 @@
     <data>
         <variable
             name="user"
-            type="com.example.projectmanagementapp.Dropdown" />
+            type="com.example.tester49.Dropdown" />
     </data>
 <LinearLayout
     android:layout_width="match_parent"
