@@ -8,9 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
-import com.example.tester49.Projects
-import com.example.tester49.R
-import com.example.tester49.createtask
+import com.example.tester49.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -58,7 +56,7 @@ private lateinit var navController: NavController
         super.onViewCreated(view, savedInstanceState)
         createbutton.setOnClickListener {
             activity?.let {
-                val intent=Intent(it,createtask::class.java)
+                val intent=Intent(it, createproject::class.java)
                 it.startActivity(intent)
 
             }

@@ -7,10 +7,20 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_createproject.*
 import kotlinx.android.synthetic.main.activity_projects.*
 
+
+
+
 class Projects : AppCompatActivity() {
+
+    private var layoutManager:RecyclerView.LayoutManager?=null
+    private var adapter:RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>?=null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_projects)
@@ -25,10 +35,28 @@ class Projects : AppCompatActivity() {
 
         //this is for create project button
 
-        button3.setOnClickListener {
+        createnewprojectbutton.setOnClickListener {
             val intent = Intent(this,createproject::class.java)
             startActivity(intent)
         }
+
+
+        //this is for the recycle viewer
+
+        layoutManager=LinearLayoutManager(this)
+
+        recyclerView.layoutManager=layoutManager
+
+        adapter=RecyclerViewAdapter()
+        recyclerView.adapter=adapter
+
+
+
+
+
+
+
+
 
 
 // this is filterby drop down list
