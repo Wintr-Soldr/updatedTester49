@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tester49">
+        <activity android:name=".Dropdown2"></activity>
         <activity
             android:name=".createproject"
             android:label="@string/title_activity_createproject"
-            android:theme="@style/Theme.Tester49.NoActionBar"></activity>
+            android:theme="@style/Theme.Tester49.NoActionBar" />
         <activity android:name=".Projects" />
         <activity android:name=".createtask" />
         <activity android:name=".MainActivity">

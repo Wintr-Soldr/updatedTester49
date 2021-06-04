@@ -1,6 +1,5 @@
 package com.example.tester49
 
-import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -17,7 +16,6 @@ import kotlin.collections.ArrayList
 class Dropdown : AppCompatActivity() {
     private lateinit var binding: ActivityDropdownBinding
 
-    @SuppressLint("SimpleDateFormat")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDropdownBinding.inflate(layoutInflater)
@@ -61,26 +59,26 @@ class Dropdown : AppCompatActivity() {
         val saveButton = findViewById<Button>(R.id.save_button)
         onButtonClick(saveButton)
 
-        val calendar= Calendar.getInstance()
+        val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
         val month = calendar.get(Calendar.MONTH)
         val day = calendar.get(Calendar.DAY_OF_MONTH)
 
         val cal1: ImageButton = findViewById(R.id.cal1)
-        val startingDateText : EditText = findViewById(R.id.startingDateText)
+        val startingDateText: EditText = findViewById(R.id.startingDateText)
 
-        val sdf = SimpleDateFormat("dd-mm-yyyy")
-        val currentDateandTime = sdf.format(Date()) as String
+        val simpleDateFormat = SimpleDateFormat("dd.MM.yyyy")
+        val currentDateAndTime: String = simpleDateFormat.format(Date())
+        startingDateText.setText(currentDateAndTime)
 
-        startingDateText.setText(currentDateandTime)
+        val cal2: ImageButton = findViewById(R.id.cal2)
+        val estDateText: EditText = findViewById(R.id.estDateText)
 
-        val cal2:ImageButton = findViewById(R.id.cal2)
-        val estDateText : EditText = findViewById(R.id.estDateText)
-
-        estDateText.setText(currentDateandTime)
+        estDateText.setText(currentDateAndTime)
 
         cal1.setOnClickListener(View.OnClickListener {
-            val datePickerDialog = DatePickerDialog(this@Dropdown,
+            val datePickerDialog = DatePickerDialog(
+                this@Dropdown,
                 { view, year, month, dayOfMonth -> //sets date in EditText
                     startingDateText.setText(dayOfMonth.toString() + "-" + (month + 1) + "-" + year)
                 }, year, month, day
