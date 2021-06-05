@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment">
 
 
@@ -178,19 +176,15 @@
         />
 
 
-
-
     <HorizontalScrollView
         android:layout_width="352dp"
         android:layout_height="135dp"
         android:layout_x="30dp"
 
-        android:layout_y="487dp"
+        android:layout_y="489dp"
 
         android:background="@drawable/textview_border"
         android:fadeScrollbars="true"
-
-
 
 
         >
@@ -204,58 +198,15 @@
 
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="180dp"
-                android:layout_height="110dp"
-                android:textAlignment="textStart"
-                android:text="Abhishek            id:M1011\n\nUpdated Task 1\n\nAssigned Task to Rohan\nTeam : Social Media"
-                android:id="@+id/card1"
-                android:padding="2dp"
-                android:paddingLeft="5dp"
-                android:paddingStart="5dp"
-                android:paddingVertical="8dp"
-android:textSize="12dp"
-
-                android:layout_marginRight="10dp"
-                android:background="@drawable/textview_border"
-
-
-                />
-            <TextView
-                android:layout_width="150dp"
-                android:textAlignment="textStart"
-                android:padding="2dp"
-                android:paddingLeft="5dp"
-                android:paddingStart="5dp"
-                android:paddingVertical="8dp"
-                android:layout_height="110dp"
-                android:text="Rekha        id: M1010\n\nScheduled Meeting with CMD Team\nAssigned Task to Sweta\nTeam : UI UX Website"
-                android:id="@+id/card2"
-                android:layout_marginRight="10dp"
-                android:textSize="12dp"
-                android:background="@drawable/textview_border"
-                />
-            <TextView
-                android:layout_width="150dp"
-                android:textAlignment="textStart"
-                android:padding="2dp"
-                android:paddingLeft="5dp"
-                android:paddingStart="5dp"
-                android:paddingVertical="8dp"
-                android:textSize="12dp"
-                android:layout_height="110dp"
-                android:text="This is Card 3 \n Text to be displayed here"
-                android:id="@+id/card3"
-                android:background="@drawable/textview_border"
-                android:layout_marginRight="10dp"
-                />
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal" />
 
         </LinearLayout>
 
     </HorizontalScrollView>
-
-
 
 
 </AbsoluteLayout>
