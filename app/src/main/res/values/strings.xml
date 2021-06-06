@@ -57,4 +57,7 @@
         <item>Jeegyasha</item>
         <item>Diya Mourya</item>
     </string-array>
+
+    <string name="ongoing">Ongoing</string>
+    <string name="completed">Completed</string>
 </resources>
