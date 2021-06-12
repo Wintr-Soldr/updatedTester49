@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/TaskCard_View"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    android:layout_margin="10dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    android:layout_marginBottom="15dp"
+
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Task Name"
+                android:id="@+id/TCV_PJ_Name"
+                android:textStyle="bold"
+
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_multiple_idiots"
+                />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TCV_PJ_Number"
+
+                android:text="5"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginRight="40dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/ic_calendarthingy"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21/05/2021"
+                android:textStyle="bold"
+                android:width="110dp"
+
+                android:id="@+id/TCV_PJ_STARTDate"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/onlytopgreyborder"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="#DD1919"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:id="@+id/TEditthing"
+                android:layout_marginRight="110dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:text="Est Deadline: "
+                />
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:layout_marginTop="5dp"
+                android:text="31/05/2021"
+
+                android:id="@+id/TCV_PJ_ESTDate"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

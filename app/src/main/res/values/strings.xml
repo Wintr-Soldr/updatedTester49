@@ -21,6 +21,16 @@
 
     <string name="est_date">Est Deadline</string>
 
+
+    <string-array name="taskviewdropdwn">
+        <item> Ongoing </item>
+        <item> Completed </item>
+
+
+
+    </string-array>
+
+
     <string-array name="handlerslist">
 
         <item>Priyal Kumavat</item>

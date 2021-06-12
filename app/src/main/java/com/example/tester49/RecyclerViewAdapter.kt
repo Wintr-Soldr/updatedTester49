@@ -1,5 +1,6 @@
 package com.example.tester49
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -76,8 +77,10 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
         holder.deaddate.text=projectdeadline[position]
 
         holder.editlink.setOnClickListener {
+        // starting the tasktracker actibvity
 
-            // do the thing for edit here you have the position and other details njoy
+
+
         }
 
 

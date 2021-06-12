@@ -1,0 +1,11 @@
+<TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+    android:padding="5dp"
+    android:textColor="#808080"
+    android:textStyle="bold"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        />

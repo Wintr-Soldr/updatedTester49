@@ -1,11 +1,13 @@
 package com.example.tester49
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
 
 import kotlinx.android.synthetic.main.activity_createproject.*
+import kotlinx.android.synthetic.main.activity_projects.*
 import java.util.*
 
 class createtask : AppCompatActivity()
@@ -22,6 +24,14 @@ class createtask : AppCompatActivity()
 
         option = findViewById<Spinner>(R.id.multiselector)
         result = findViewById<TextView>(R.id.multiselectorresult)
+
+
+
+
+        TaskEditButton.setOnClickListener {
+            val intent = Intent(this,TaskTracker::class.java)
+            startActivity(intent)
+        }
 
         val depts:Array<String> = arrayOf("Development","Business Development","Affiliate Marketing","UI-UX Design")
         val arrayAdapter=ArrayAdapter(this@createtask,android.R.layout.simple_spinner_dropdown_item,depts)

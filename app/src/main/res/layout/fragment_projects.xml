@@ -25,12 +25,6 @@
 
         tools:layout_editor_absoluteY="16dp" />
 
-
-
-
-
-
-
     <RelativeLayout
         android:id="@+id/proj_list_box"
         android:layout_width="match_parent"
@@ -83,7 +77,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="572dp"
+        android:layout_height="493dp"
         android:layout_x="0dp"
 
         android:layout_y="145dp" />

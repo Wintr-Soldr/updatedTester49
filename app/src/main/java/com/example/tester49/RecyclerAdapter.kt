@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
+
     private val names = arrayOf("Abhishek", "Rekha", "Rahul")
     private val identities = arrayOf("id: M1011", "id: M1010", "id: M1009")
     private val tasksDone = arrayOf(

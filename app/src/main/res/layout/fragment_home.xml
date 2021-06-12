@@ -27,22 +27,18 @@
 
         tools:layout_editor_absoluteY="16dp" />
 
-    <Button
-        android:id="@+id/button"
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="9dp"
-        android:layout_y="81dp"
-        android:backgroundTint="@color/white"
-        android:drawableLeft="@drawable/ic_downarrow"
-        android:text="Analytics"
-        android:textAllCaps="false"
-        android:textColor="#808080"
+        android:layout_x="24dp"
+        android:layout_y="106dp"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_downarrow"
+        android:text="Analytics\n(Last 1 month)"
+        android:textStyle="bold"
 
-
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="87dp" />
-
+        />
 
     <TextView
         android:id="@+id/total_task_created_view"

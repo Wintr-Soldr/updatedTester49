@@ -8,6 +8,17 @@
     tools:context=".createtask">
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="305dp"
+        android:layout_y="27dp"
+android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/TaskEditButton"
+        android:text="TaskEditor"
+        android:textSize="4dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

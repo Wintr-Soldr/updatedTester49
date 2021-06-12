@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskTracker">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/taskviewtoolbarupper" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskView"
+        android:layout_width="match_parent"
+        android:layout_height="595dp"
+        android:layout_x="0dp"
+
+        android:layout_y="135dp"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintTop_toBottomOf="@id/include"
+        app:layout_constraintVertical_bias="0.841" />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_x="100dp"
+        android:padding="0dp"
+
+
+        android:layout_y="72dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:padding="0dp"
+            android:text="ongoing" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</AbsoluteLayout>
