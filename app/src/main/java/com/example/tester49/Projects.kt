@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_createproject.*
 import kotlinx.android.synthetic.main.activity_projects.*
-
+//projpage
 
 class Projects : AppCompatActivity() {
 

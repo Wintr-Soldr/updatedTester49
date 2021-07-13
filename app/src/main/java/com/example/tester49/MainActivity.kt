@@ -11,7 +11,7 @@ import com.example.tester49.fragments.HomeFragment
 import com.example.tester49.fragments.NotificationFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.appbar.*
-
+//MA
 
 class MainActivity : AppCompatActivity() {
     

@@ -8,6 +8,6 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     app:title="       Admin-Project Managment"
     app:logo="@drawable/ic_toolbarhomeicon">
-
+    <!--appbar-->
 
 </androidx.appcompat.widget.Toolbar>

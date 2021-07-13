@@ -11,7 +11,7 @@ import com.example.tester49.R
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-
+//jjjj
 /**
  * A simple [Fragment] subclass.
  * Use the [DeptFragment.newInstance] factory method to

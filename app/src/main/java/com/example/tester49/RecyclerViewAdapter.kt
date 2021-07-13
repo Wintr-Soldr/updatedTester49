@@ -9,10 +9,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import org.w3c.dom.Text
-
+//rva
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(){
 
-
+//jj
     // Variables for scroll view cards
         private val projecttitles = arrayOf("Tracking Portal","tracking portal","track portal")//titles of project
         private val projectdesc= arrayOf("TextDes\nstatement 2","This is \n i dont know","Please read the below statment\nsure") //description of  project

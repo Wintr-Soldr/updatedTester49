@@ -1,4 +1,5 @@
 package com.example.tester49
+//category model
 
 class CategoryModel {
     private var selected = false

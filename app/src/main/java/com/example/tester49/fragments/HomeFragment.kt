@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
-
+//jjj
 private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -10,6 +10,7 @@
         android:icon="@drawable/ic_followupsiconnew"
         android:title="Follow Ups"
         />
+    <!--navbar-->
     <item
         android:id="@+id/ic_notifications"
         android:icon="@drawable/ic_notificationsiconnew"

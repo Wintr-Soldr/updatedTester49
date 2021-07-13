@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
-
+//dd2
 class Dropdown2 : AppCompatActivity() {
     private lateinit var binding: ActivityDropdown2Binding
     override fun onCreate(savedInstanceState: Bundle?) {

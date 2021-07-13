@@ -11,7 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import java.util.*
 
-
+//adapter
 class MyAdapter(private val mContext: Context, resource: Int, objects: List<CategoryModel>) :
     ArrayAdapter<CategoryModel?>(mContext, resource, objects) {
     private val listState: ArrayList<CategoryModel>
