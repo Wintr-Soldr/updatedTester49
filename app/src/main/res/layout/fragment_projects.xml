@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--project fragment -->
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Projects">
-    <!--fragproj-->
 
+    <!--button to create new project to activity_dropdown.xml-->
     <Button
         android:id="@+id/createnewprojectbutton"
         android:layout_width="372dp"
@@ -30,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="77dp"
         android:layout_y="70dp">
-
+        <!--toggle button to show ongoing or completed projects-->
         <Button
             android:id="@+id/toggle"
             style="?android:attr/borderlessButtonStyle"
@@ -45,7 +46,7 @@
             android:textAllCaps="false"
             android:textColor="#077A27"
             android:textSize="12sp" />
-
+        <!--label to show number of projects-->
         <TextView
             android:id="@+id/noofprojects"
             android:layout_width="70dp"
@@ -62,7 +63,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="17dp"
             android:layout_toEndOf="@id/toggle">
-
+            <!--spinner to select the filter criteria-->
             <Spinner
                 android:id="@+id/filterbyspinner"
                 android:layout_width="80dp"
@@ -73,7 +74,7 @@
         </LinearLayout>
 
     </RelativeLayout>
-
+    <!--recycler view to show cardview based on recyclerview_model.xml-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"

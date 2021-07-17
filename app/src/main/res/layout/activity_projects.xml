@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--this is the create project page-->
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Projects">
-    <!--acvproj-->
 
+    <!--this button is used to link to the activity_createproject2.xml page and can be changed to dropdown.xml-->
     <Button
         android:id="@+id/createnewprojectbutton"
         android:layout_width="372dp"
@@ -29,14 +30,14 @@
 
 
 
-
+    <!--this layout is used to horizontally allign elements-->
 
     <RelativeLayout
         android:id="@+id/proj_list_box"
         android:layout_width="match_parent"
         android:layout_height="77dp"
         android:layout_y="70dp">
-
+        <!--this button is to toggle from ongoing/completed-->
         <Button
             android:id="@+id/toggle"
             style="?android:attr/borderlessButtonStyle"
@@ -51,7 +52,7 @@
             android:textAllCaps="false"
             android:textColor="#077A27"
             android:textSize="12sp" />
-
+        <!--this label is used to display number of projects-->
         <TextView
             android:id="@+id/noofprojects"
             android:layout_width="70dp"
@@ -68,7 +69,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="17dp"
             android:layout_toEndOf="@id/toggle">
-
+            <!--this spinner is used to select the filter like  department -->
             <Spinner
                 android:id="@+id/filterbyspinner"
                 android:layout_width="80dp"
@@ -79,7 +80,7 @@
         </LinearLayout>
 
     </RelativeLayout>
-
+    <!--this recycler view is used to display the card based on recyclerview_model.xml-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"

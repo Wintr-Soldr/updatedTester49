@@ -8,7 +8,7 @@
     <!--home-->
     <!-- TODO: Update blank fragment layout -->
 
-
+    <!--this button is used to create new task,redirected to activity_createproject.xml can be changed to activity_dropdown2.xml-->
     <Button
         android:id="@+id/createbutton"
         android:layout_width="360dp"
@@ -27,7 +27,7 @@
 
         tools:layout_editor_absoluteY="16dp" />
 
-
+    <!--this button is used to show the more analytics -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         android:textStyle="bold"
 
         />
-
+    <!--this label is used to show total tasks created-->
     <TextView
         android:id="@+id/total_task_created_view"
         android:layout_width="300dp"
@@ -55,7 +55,7 @@
         android:textAlignment="center"
         tools:layout_editor_absoluteX="134dp"
         tools:layout_editor_absoluteY="184dp" />
-
+    <!--this label is used to show ongoing tasks-->
     <TextView
         android:id="@+id/ongoing_task_view"
         android:layout_width="136dp"
@@ -74,7 +74,7 @@
 
         tools:layout_editor_absoluteX="106dp"
         tools:layout_editor_absoluteY="206dp" />
-
+    <!--this label i sused to show underreview tasks-->
     <TextView
         android:id="@+id/under_review_view"
         android:layout_width="136dp"
@@ -90,7 +90,7 @@
         android:textAlignment="center"
         android:textSize="13dp"
         android:textStyle="bold" />
-
+    <!--this label is used to show number of completed taks-->
     <TextView
         android:layout_width="136dp"
         android:layout_height="50dp"
@@ -108,6 +108,7 @@
         android:textAlignment="center"
         android:id="@+id/completed_task_view"
         />
+    <!--this label is used to show upcoming tasks-->
     <TextView
         android:layout_width="136dp"
         android:layout_height="50dp"
@@ -124,6 +125,7 @@
         android:layout_x="216dp"
         android:id="@+id/upcoming_task_view"
         />
+    <!--this label is used to show number of tasks delayed-->
     <TextView
         android:id="@+id/tasks_delayed_view"
         android:layout_width="136dp"
@@ -139,6 +141,7 @@
         android:text="Tasks Delayed\nxx"
         android:layout_x="51dp"
         android:layout_y="360dp"/>
+    <!--this label is used to show number of students without tasks-->
     <TextView
         android:layout_width="136dp"
         android:layout_height="50dp"
@@ -157,7 +160,7 @@
         android:layout_y="360dp"
         />
 
-
+    <!--label for latest updates-->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -171,7 +174,7 @@
         android:textSize="20dp"
 
         />
-
+    <!--horizontal scroll view with cardview based on  card_view.xml-->
 
     <HorizontalScrollView
         android:layout_width="352dp"

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--this is the model for bottom navigation bar in home page-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/ic_home"

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--card view for home page latest updates-->
+
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
@@ -19,7 +21,7 @@
             android:id="@+id/name_id"
             android:layout_width="match_parent"
             android:layout_height="30dp">
-
+            <!--this label is used to display the name of the handler-->
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
@@ -30,7 +32,7 @@
                 android:text="Abhishek"
                 android:textColor="#05888D"
                 android:textSize="12sp" />
-
+            <!--this label is used to display the id number of the handler-->
             <TextView
                 android:id="@+id/identity"
                 android:layout_width="wrap_content"
@@ -51,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="23dp"
             android:background="@drawable/rectangle_2">
-
+            <!--this label is used to display the date -->
             <TextView
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
@@ -62,7 +64,7 @@
                 android:text="21/05/2021"
                 android:textColor="#05888D"
                 android:textSize="9sp" />
-
+            <!--this clickable label is used to click to view more info-->
             <TextView
                 android:id="@+id/view"
                 android:layout_width="wrap_content"
@@ -84,7 +86,7 @@
 
 
         </RelativeLayout>
-
+        <!--this label is used to show more info-->
         <TextView
             android:id="@+id/assignee"
             android:layout_width="wrap_content"
@@ -95,7 +97,7 @@
             android:text="Assigned Task to Rohan"
             android:textColor="#595959"
             android:textSize="11sp" />
-
+        <!--this label is used to show team-->
         <TextView
             android:id="@+id/team"
             android:layout_width="wrap_content"
@@ -105,7 +107,7 @@
             android:text="Team : Social Media"
             android:textColor="#595959"
             android:textSize="11sp" />
-
+        <!--this label is used to show the updated task-->
         <TextView
             android:id="@+id/task_done"
             android:layout_width="wrap_content"
@@ -116,7 +118,7 @@
             android:text="Updated Task 1"
             android:textColor="#595959"
             android:textSize="11sp" />
-
+        <!--this view is for a background-->
         <View
             android:layout_width="wrap_content"
             android:layout_height="0.5dp"

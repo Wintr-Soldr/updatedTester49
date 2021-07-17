@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--this is the background activity from where the fragments will run-->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <!--create-->
+    <!--this is the bottom navigation bar formatted from the nav_menu.xml file-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,9 +20,10 @@
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         />
+    <!--this command includes the upper "Admin-Project Management" text and is formatted in appbar.xml-->
     <include layout="@layout/appbar"
         />
-
+    <!--this is used to display the fragments-->
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--this page is used to track tasks-->
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,11 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".TaskTracker">
     <!--tt-->
+
+    <!--this upper bar is used to display the "Project-Tracking Portal for  Affiliates" and is based on taskviewtoolbarupper.xml-->
     <include
         android:id="@+id/include"
         layout="@layout/taskviewtoolbarupper" />
 
-
+    <!--thsi recyclerview is used to display tasks in card view based on task_view_model.xml-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/taskView"
         android:layout_width="match_parent"
@@ -34,7 +37,7 @@
 
 
         android:layout_y="72dp">
-
+        <!--this is used to toggle from ongoing/completed-->
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView4"
             android:layout_width="match_parent"

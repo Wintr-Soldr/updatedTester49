@@ -12,7 +12,7 @@
     android:clickable="true"
     android:layout_marginBottom="15dp"
 >
-    <!--rimmodel-->
+    <!--recycler view model for projects page-->
 
 
     <LinearLayout
@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
+            <!--this label is used to show the project name-->
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
@@ -40,6 +41,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_multiple_idiots"
                 />
+            <!--this label is used to show the number of people working on the project-->
             <TextView
                 android:layout_width="20dp"
                 android:layout_height="wrap_content"
@@ -56,6 +58,7 @@
             android:layout_marginRight="2dp"
             android:src="@drawable/ic_calendarthingy"
             />
+            <!--this label is used to show the date when the project was started-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,7 +76,7 @@
         </LinearLayout>
 
 
-
+        <!--this label is uesd to show the descreption of the project-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,6 +98,7 @@
             android:background="@drawable/onlytopgreyborder"
 
             >
+            <!--this clickable text view is used to edit the project details-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -115,6 +119,7 @@
 
                 android:layout_marginRight="2dp"
                 />
+            <!--this lable is used to display the number of tasks-->
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
@@ -134,6 +139,7 @@
                 android:textSize="15dp"
                 android:text="Est Deadline: "
                 />
+            <!--this label is used to display the estimated date of completion for the project-->
             <TextView
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"

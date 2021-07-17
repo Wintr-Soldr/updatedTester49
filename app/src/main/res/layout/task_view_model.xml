@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--this is the cardview for the tassks page-->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +13,7 @@
     android:clickable="true"
     android:layout_marginBottom="15dp"
 >
-    <!--tvm-->
+
 
 
     <LinearLayout
@@ -26,6 +27,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
+            <!--this is the label used to show tasks name-->
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
@@ -40,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_multiple_idiots"
                 />
+            <!--this label is used to show number of people working ont the task-->
             <TextView
                 android:layout_width="20dp"
                 android:layout_height="wrap_content"
@@ -56,6 +59,7 @@
                 android:layout_marginRight="2dp"
                 android:src="@drawable/ic_calendarthingy"
                 />
+            <!--this label is used to show the starting date-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -86,6 +90,7 @@
             android:background="@drawable/onlytopgreyborder"
 
             >
+            <!--this clickabe textview is used to edit the task-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -99,7 +104,7 @@
                 android:layout_marginRight="110dp"
                 />
 
-
+            <!--this label is used to show ending date estimation-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
