@@ -23,7 +23,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
 
 
 
-
+//creating a view holder with variables
 
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -55,7 +55,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-
+//inflating the view
 
         val v= LayoutInflater.from(parent.context)
             .inflate(R.layout.recyclerview_model,parent,false)
@@ -67,7 +67,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-
+//assigning values to elements
 
         holder.numpeople.text=projectnumppl[position]
         holder.PJTitle.text=projecttitles[position]
